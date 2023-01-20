@@ -8,6 +8,11 @@ public class PageController {
 
     @GetMapping("/")
     public String index() {
-        return "index";
+        return "index-Korean";
     }
+    @GetMapping("/Kor")
+    public String Korean() {
+        return "index-Korean";
+    }
+
 }
