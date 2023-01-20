@@ -8,11 +8,18 @@ public class PageController {
 
     @GetMapping("/")
     public String index() {
+        return "redirect:/kor";
+    }
+    @GetMapping("/kor")
+    public String KoreanVersion() {
         return "index-Korean";
     }
-    @GetMapping("/Kor")
-    public String Korean() {
-        return "index-Korean";
+
+    @GetMapping("/eng")
+    public String EnglishVersion() {
+        return "index-English";
     }
+
+
 
 }
