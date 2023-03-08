@@ -9,8 +9,8 @@
 }
 
 :root {
-    --primary-color: #339cfc;
-    --text-color: #363636;
+    --primary-color: #ff7613;
+    --text-color: #727171;
 }
 
 html {
@@ -19,8 +19,8 @@ html {
 
 body {
     font-family: Inter, sans-serif;
-    background-color: #ffffff;
-    color: #8a8a8a;
+    background-color: black;
+    color: white;
 }
 
 /**/
@@ -63,7 +63,7 @@ img {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: white;
 }
 
 .description {
@@ -88,7 +88,7 @@ a {
 
 .item_title {
     font-size: 1.6rem;
-    color: #000000;
+    color: white;
     font-weight: 500;
     margin: 0.8rem 0;
 }
@@ -106,7 +106,7 @@ a {
     margin: 0 auto;
     display: grid;
     padding: 5rem;
-    background: rgb(246, 246, 246);
+    background: #070707;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
@@ -167,7 +167,7 @@ a {
 }
 
 .profile_name_firstName {
-    color: #000000;
+    color: white;
     font-weight: 200;
     font-size: clamp(2rem, 8vw, 4rem);
     text-transform: uppercase;

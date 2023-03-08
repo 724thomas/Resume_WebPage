@@ -8,17 +8,24 @@ public class PageController {
 
     @GetMapping("/")
     public String index() {
-        return "redirect:/kor";
+        return "redirect:/portfolio/kor";
     }
-    @GetMapping("/kor")
-    public String KoreanVersion() {
-        return "index-Korean";
+    @GetMapping("/resume/kor")
+    public String ResumeKoreanVersion() {
+        return "resume-Korean";
     }
 
-    @GetMapping("/eng")
-    public String EnglishVersion() {
-        return "index-English";
+    @GetMapping("/resume/eng")
+    public String ResumeEnglishVersion() {
+        return "resume-English";
     }
+
+    @GetMapping("/portfolio/kor")
+    public String PortfolioKoreanVersion() {
+        return "portfolio-Korean";
+    }
+
+
 
 
 
