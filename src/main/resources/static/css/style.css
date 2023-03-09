@@ -38,6 +38,7 @@ nav {
     margin: auto;
     display: flex;
 }
+
 span {
     margin: 5px 5px;
 }
@@ -102,7 +103,7 @@ a {
 
 /* layouts */
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     width: 90%;
     margin: 0 auto;
     display: grid;
