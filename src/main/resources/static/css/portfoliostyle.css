@@ -115,10 +115,23 @@ a {
     width: 90%;
     margin: 0 auto;
     display: grid;
-    padding: 5rem;
+    padding: 0rem 0rem 15rem 5rem;
     background: rgb(253, 253, 253);
     grid-template-columns: 1fr 4fr;
     gap: 4rem;
+}
+
+.subtitle {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 0rem 0rem 0rem 4rem;
+    background: rgb(253, 253, 253);
+    /*grid-template-columns: 1fr 4fr;*/
+    color: #005b08;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
