@@ -54,6 +54,10 @@ span {
     position: relative;
 }
 
+/*.lang-menu:hover {*/
+/*    color: var(--primary-color);*/
+/*}*/
+
 .lang-menu a {
     margin-left: 10px;
 }
