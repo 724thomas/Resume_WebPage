@@ -191,7 +191,12 @@ a {
 }
 
 .profile_profileImg {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: end; /* Center vertically */
     max-width: 250px;
+    /*margin: 0 auto; !* Center the container itself *!*/
+    /*max-width: 250px;*/
 }
 
 .profile_name_firstName {
