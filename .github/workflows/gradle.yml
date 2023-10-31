@@ -66,4 +66,4 @@ jobs:
         script_stop: true
         script: |
           chmod +x /home/ubuntu/cicd/deploy.sh
-            sh /home/ubuntu/cicd/deploy.sh
+          sh /home/ubuntu/cicd/deploy.sh
