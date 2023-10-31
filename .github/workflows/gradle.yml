@@ -35,7 +35,7 @@ jobs:
       with:
         arguments: build
     - name: executing remote ssh commands using ssh key
-      uses: appleboy/ssh-action@v0.1.10
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
