@@ -34,13 +34,36 @@ jobs:
       uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
       with:
         arguments: build
-    - name: executing remote ssh commands using ssh key
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: cicdsample
+        path: build/libs/*.jar
+
+    - name: Copy jar file to remote
+      uses: appleboy/scp-action@master
+      with:
+        username: ubuntu
+        host: ${{ secrets.HOST }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        source: "./build/libs/*.jar"
+        target: "/home/ubuntu/cicd"
+        strip_components: 2
+    - name: Copy deploy script file to remote
+      uses: appleboy/scp-action@master
+      with:
+        username: ubuntu
+        host: ${{ secrets.HOST }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        source: "deploy.sh"
+        target: "/home/ubuntu/cicd"
+    - name: Execute deploy script
       uses: appleboy/ssh-action@master
       with:
+        username: ubuntu
         host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
         key: ${{ secrets.PRIVATE_KEY }}
-        port: ${{ secrets.PORT }}
+        script_stop: true
         script: |
-          whoami
-          ls -al
+          chmod +x /home/ubuntu/cicd/deploy.sh
+            sh /home/ec2-user/cicd/deploy.sh
