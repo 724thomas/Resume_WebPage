@@ -28,7 +28,42 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+    - name: Run chmod to make gradlew executable
+      run: chmod +x ./gradlew
     - name: Build with Gradle
       uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
       with:
         arguments: build
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: cicdsample
+        path: build/libs/*.jar
+
+    - name: Copy jar file to remote
+      uses: appleboy/scp-action@master
+      with:
+        username: ubuntu
+        host: ${{ secrets.HOST }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        source: "./build/libs/*.jar"
+        target: "/home/ubuntu/cicd"
+        strip_components: 2
+    - name: Copy deploy script file to remote
+      uses: appleboy/scp-action@master
+      with:
+        username: ubuntu
+        host: ${{ secrets.HOST }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        source: "deploy.sh"
+        target: "/home/ubuntu/cicd"
+    - name: Execute deploy script
+      uses: appleboy/ssh-action@master
+      with:
+        username: ubuntu
+        host: ${{ secrets.HOST }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        script_stop: true
+        script: |
+          chmod +x /home/ubuntu/cicd/deploy.sh
+            sh /home/ec2-user/cicd/deploy.sh
