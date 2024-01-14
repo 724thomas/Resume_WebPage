@@ -346,3 +346,8 @@ hr {
         margin: 0 auto;
     }
 }
+
+sup {
+    font-size: smaller;
+    color: red;
+}
