@@ -25,6 +25,11 @@ public class PageController {
         return "portfolio-Korean";
     }
 
+    @GetMapping("/portfolio/pdf")
+    public String PortfolioPdf() {
+        return "portfolio-pdf";
+    }
+
 
 
 
