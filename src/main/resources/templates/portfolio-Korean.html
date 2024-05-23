@@ -249,9 +249,16 @@
             <p class=" description">
                 ㅇ 로그 데이터 <b>마이그레이션 프로세스 구현</b>
                 <br><br>
-                ㅤCloudWatch로 집계되는 데이터를 S3로, 그리고 Glacier로 한번 더 마이그레이션하여, 저장 비용을 최소화하였습니다.
+                ㅤCloudWatch 로그 데이터를 S3 및 Glacier로 아카이빙하는 자동화 프로세스 구현을 통한 저장비용 최소화
                 <br><br>
                 ㅤEventBridge와 Lambda를 사용하여, 데이터를 해당 저장소로 이동시키는 <b>배치 프로세스</b>를 구현하였습니다.
+            </p>
+            <br>
+            <p class=" description">
+                <a href="https://developer-technical-blog.gitbook.io/joons-til/aws/server-log-archive-pipeline" target="_b" class="social_item">
+                    <i data-feather="file-text" style="margin-left: 12px;"></i>
+                    <span><b><i>서버 로그 아카이빙 파이프라인</i></b></span>
+                </a>
             </p>
             <br><br>
             <p class=" description">
@@ -264,8 +271,6 @@
             <br><br>
             <p class=" description">
                 ㅇ 스케줄러(Cron) 기반의 일일 <b>통계 집계 및 알림 시스템 구현</b>
-                <br><br>
-                ㅤ통계를 통해 서비스의 전략적 방향성을 제시하고, 알림을 통해 서비스의 변화를 알림.
             </p>
             <br><br>
             <p class=" description">
@@ -275,8 +280,14 @@
                 <br><br>
                 ㅤ이미지 크롭, 리사이즈, 압축 등의 작업을 수행하는 람다 함수의 로직 순서 변경을 통해 처리속도를 더욱 <b>향상</b>시켰습니다.
             </p>
+            <br>
+            <p class=" description">
+                <a href="https://developer-technical-blog.gitbook.io/joons-til/aws/image-processing-using-lambda" target="_b" class="social_item">
+                    <i data-feather="file-text" style="margin-left: 12px;"></i>
+                    <span><b><i>이미지 처리 최적화 전략(AWS Lambda)</i></b></span>
+                </a>
+            </p>
             <br><br>
-
             <p class=" description">
                 ㅇ 알림(Notification) 시스템 구현
                 <br><br>
@@ -285,7 +296,6 @@
                 ㅤDB와 Firebase Subscription의 일관성을 유지하기 위해, Failover 로직 추가.
             </p>
             <br><br>
-
             <p class=" description">
                 ㅇ 데이터베이스 <b>쿼리 최적화</b>
                 <br><br>
