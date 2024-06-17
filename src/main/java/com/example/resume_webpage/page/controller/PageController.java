@@ -43,10 +43,14 @@ public class PageController {
     // GRAPHIC
     @GetMapping("/blog/server-log-archive-pipeline")
     public String graphicServerLogArchivePipeline() {
-        return "redirect:https://wonjoon.gitbook.io/joons-til/aws/image-processing-using-lambda";
+        return "redirect:https://wonjoon.gitbook.io/joons-til/aws/server-log-archive-pipeline";
     }
     @GetMapping("/blog/image-processing-with-lambda")
     public String graphicImageProcessingWithLambda() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/aws/image-processing-using-lambda";
+    }
+    @GetMapping("/blog/consistency-atomicity-ux-optimization")
+    public String graphicDataConsistencyAtomicityUXOptimization() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/database/ensuring-data-consistency-atomicity-and-ux-optimization-feat.firebase";
     }
 
