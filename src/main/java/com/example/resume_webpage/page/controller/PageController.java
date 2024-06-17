@@ -53,6 +53,10 @@ public class PageController {
     public String graphicDataConsistencyAtomicityUXOptimization() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/database/ensuring-data-consistency-atomicity-and-ux-optimization-feat.firebase";
     }
+    @GetMapping("/review/그래픽-인턴-회고록-medium")
+    public String graphicReview() {
+        return "redirect:https://medium.com/graphic-bookstore/%EC%8B%A0%EC%9E%85-%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-2024%EB%85%84-%EC%83%81%EB%B0%98%EA%B8%B0-%EA%B7%B8%EB%9E%98%ED%94%BD-%EC%9D%B8%ED%84%B4-%ED%9A%8C%EA%B3%A0%EB%A1%9D-999075dd7d80";
+    }
 
     // KAKAOBRAIN
 
