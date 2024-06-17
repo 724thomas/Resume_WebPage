@@ -41,16 +41,15 @@ public class PageController {
     }
 
     // GRAPHIC
-//    @GetMapping("/blog/server-log-archive-pipeline")
-    @GetMapping("/blog/로그-아카이브-파이프라인")
+    @GetMapping("/blog/서버-로그-아카이브-파이프라인")
     public String graphicServerLogArchivePipeline() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/aws/server-log-archive-pipeline";
     }
-    @GetMapping("/blog/image-processing-with-lambda")
+    @GetMapping("/blog/람다-이미지-프로세싱")
     public String graphicImageProcessingWithLambda() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/aws/image-processing-using-lambda";
     }
-    @GetMapping("/blog/consistency-atomicity-ux-optimization")
+    @GetMapping("/blog/데이터-일관성-원자성-UX최적화")
     public String graphicDataConsistencyAtomicityUXOptimization() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/database/ensuring-data-consistency-atomicity-and-ux-optimization-feat.firebase";
     }
