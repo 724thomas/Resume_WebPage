@@ -2,6 +2,7 @@ package com.example.resume_webpage.page.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.view.RedirectView;
 
 @Controller
 public class PageController {
@@ -31,6 +32,18 @@ public class PageController {
     }
 
 
+    // REDIRECT
+
+    // CONTACT & CHANNEL
+    @GetMapping("/blog")
+    public String blog() {
+        return "redirect:https://developer-technical-blog.gitbook.io/joons-til";
+    }
+
+    @GetMapping("/review/kakaobrain")
+    public String redirectKakaoBrainReview() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/reviews/kakao-brain-pathfinder-review";
+    }
 
 
 
