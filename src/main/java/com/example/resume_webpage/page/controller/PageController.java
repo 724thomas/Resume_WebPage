@@ -37,7 +37,17 @@ public class PageController {
     // CONTACT & CHANNEL
     @GetMapping("/blog")
     public String blog() {
-        return "redirect:https://developer-technical-blog.gitbook.io/joons-til";
+        return "redirect:https://wonjoon.gitbook.io/joons-til";
+    }
+
+    // GRAPHIC
+    @GetMapping("/blog/server-log-archive-pipeline")
+    public String graphicServerLogArchivePipeline() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/aws/image-processing-using-lambda";
+    }
+    @GetMapping("/blog/image-processing-with-lambda")
+    public String graphicImageProcessingWithLambda() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/database/ensuring-data-consistency-atomicity-and-ux-optimization-feat.firebase";
     }
 
     @GetMapping("/review/kakaobrain")
