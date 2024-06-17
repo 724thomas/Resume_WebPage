@@ -60,11 +60,22 @@ public class PageController {
 
     // KAKAOBRAIN
 
-    @GetMapping("/review/kakaobrain")
-    public String redirectKakaoBrainReview() {
+    @GetMapping("/review/카카오브레인-인턴-회고록")
+    public String kakaoBrainReview() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/reviews/kakao-brain-pathfinder-review";
     }
 
+    // SIDE PROJECTS
 
+    // CODEMENTOR
+    @GetMapping("/blog/카프카-도입기")
+    public String codementorImplementationOfKafka() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/toy-projects/codementor/implementation-of-kafka";
+    }
+    @GetMapping("/blog/쿠버네티스-도입과-프로젝트-개선-과정")
+    public String codementorImplementationOfK8s() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/toy-projects/codementor/implementation-of-kafka";
+    }
 
+//http://wonjoonthomaschoi.site/
 }
