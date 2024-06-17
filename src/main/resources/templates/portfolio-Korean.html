@@ -310,9 +310,11 @@
             <p class=" description">
                 ㅇ 알림(Notification) 시스템 구현
                 <br><br>
-                ㅤEventPublisher와 Firebase를 사용하여, 구독하는 유저들에게 알림을 보내는 시스템을 구현하였습니다.
+                ㅤEventPublisher와 Firebase를 사용하여, 구독하는 유저들에게 알림을 보내는 시스템을 구현했습니다.
                 <br><br>
-                ㅤDB와 Firebase Subscription의 일관성을 유지하기 위해, Failover 로직 추가.
+                ㅤFirebase 구독 관리에서 데이터 일관성과 원자성을 유지하기 위해, 실패한 요청에 대한 Failover 로직을 추가했습니다.
+                <br><br>
+                ㅤUX 최적화를 위해 구독 취소 시 Firebase 요청을 우선 처리하도록 순서를 조정했습니다.
             </p>
             <br>
             <p class=" description">
