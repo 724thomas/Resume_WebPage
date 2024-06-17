@@ -41,7 +41,8 @@ public class PageController {
     }
 
     // GRAPHIC
-    @GetMapping("/blog/server-log-archive-pipeline")
+//    @GetMapping("/blog/server-log-archive-pipeline")
+    @GetMapping("/blog/로그-아카이브-파이프라인")
     public String graphicServerLogArchivePipeline() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/aws/server-log-archive-pipeline";
     }
@@ -53,6 +54,8 @@ public class PageController {
     public String graphicDataConsistencyAtomicityUXOptimization() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/database/ensuring-data-consistency-atomicity-and-ux-optimization-feat.firebase";
     }
+
+    // KAKAOBRAIN
 
     @GetMapping("/review/kakaobrain")
     public String redirectKakaoBrainReview() {
