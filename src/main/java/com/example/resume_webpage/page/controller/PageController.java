@@ -77,5 +77,24 @@ public class PageController {
         return "redirect:https://wonjoon.gitbook.io/joons-til/toy-projects/codementor/implementation-of-kafka";
     }
 
+    // BOOKS
+    @GetMapping("/blog/대규모-시스템-설계-기초")
+    public String bookLargeSystemDesign() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/books/learning-the-basics-of-large-scale-system-design-through-virtual-interview-cases";
+    }
+    @GetMapping("/blog/컴퓨터시스템-프로그래머-관점")
+    public String bookCSAPP() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/books/computer-system-a-programmers-perspective";
+    }
+    @GetMapping("/blog/이펙티브-자바")
+    public String bookEffectiveJava() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/books/effective-java";
+    }
+    @GetMapping("/blog/헤드퍼스트-디자인-패턴")
+    public String bookHeadFirstDesignPattern() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/books/head-first-design-patterns";
+    }
+
+
 //http://wonjoonthomaschoi.site/
 }
