@@ -26,6 +26,11 @@ public class PageController {
         return "portfolio-Korean";
     }
 
+    @GetMapping("/portfolio")
+    public String redirectPortfolio() {
+        return "redirect:http://wonjoonthomaschoi.site/portfolio/kor";
+    }
+
     @GetMapping("/portfolio/pdf")
     public String PortfolioPdf() {
         return "portfolio-pdf";
