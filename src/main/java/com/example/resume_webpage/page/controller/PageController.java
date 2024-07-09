@@ -99,6 +99,10 @@ public class PageController {
     public String bookHeadFirstDesignPattern() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/books/head-first-design-patterns";
     }
+    @GetMapping("/blog/면접을-위한-CS-전공지식-노트")
+    public String bookCsNoteForInterview() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/books/cs-note-for-interview";
+    }
 
 
 //http://wonjoonthomaschoi.site/
