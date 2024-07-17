@@ -50,6 +50,12 @@ public class PageController {
     public String graphicServerLogArchivePipeline() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/aws/server-log-archive-pipeline";
     }
+
+    @GetMapping("/blog/Batch삭제-분리된-트랜잭션의-장단점")
+    public String batchDeleteInsteadOfCascadeDelete(){
+        return "redirect:https://wonjoon.gitbook.io/joons-til/java/batch-delete-instead-of-cascade";
+    }
+
     @GetMapping("/blog/람다-이미지-프로세싱")
     public String graphicImageProcessingWithLambda() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/aws/image-processing-using-lambda";
