@@ -71,6 +71,11 @@ public class PageController {
 
     // KAKAOBRAIN
 
+    @GetMapping("/blog/블로킹-논블로킹-동기-비동기")
+    public String blockingNonBlockingSyncAsync() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/network/blocking-nonblocking-and-sync-async";
+    }
+
     @GetMapping("/review/카카오브레인-인턴-회고록")
     public String kakaoBrainReview() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/reviews/kakao-brain-pathfinder-review";
