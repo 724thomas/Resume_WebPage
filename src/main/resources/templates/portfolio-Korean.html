@@ -529,9 +529,11 @@
             </p>
             <br>
             <p class=" description">
-                ㅇ 비동기 처리(CompletableFuture)로 GPT와의 결과 도출 <b>시간 단축 및 최적화</b>
+                ㅇ 비동기 처리와 병렬처리로 GPT와의 결과 도출 <b>시간 단축 및 최적화</b>
                 <br><br>
-                ㅤCompletableFuture와 비슷한 기능을 하는 파이썬 async, await 요청 수집 방식을 사용하여 GPT결과값 도출을 극대화하였습니다.
+                ㅤ<b>CompletableFuture</b>와 유사한 기능을 하는 Python의 async 및 await을 사용하여 비동기 처리를 구현하였습니다.
+                <br><br>
+                ㅤ비동기 요청 내에서 ChatGPT api 요청들을 <b>병렬로 처리</b>하였으며, 결과값을 합치는 과정을 거쳤습니다.
                 <br><br>
                 ㅤ기존 20~40분 소요되던 API 요청 시간을 최대 5분 이내로 단축하였으며, <span style="color:blue"><b>최대 87.5%의 시간 절약</b></span> 효과를 얻었습니다.
             </p>
