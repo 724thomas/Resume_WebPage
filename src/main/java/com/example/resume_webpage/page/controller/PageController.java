@@ -93,6 +93,12 @@ public class PageController {
         return "redirect:https://wonjoon.gitbook.io/joons-til/toy-projects/codementor/implementation-of-kafka";
     }
 
+    // STUDIES
+    @GetMapping("/blog/JSCODE-자바1기")
+    public String JscodeJava() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/java/jscode-java-study-note";
+    }
+
     // BOOKS
     @GetMapping("/blog/대규모-시스템-설계-기초")
     public String bookLargeSystemDesign() {
