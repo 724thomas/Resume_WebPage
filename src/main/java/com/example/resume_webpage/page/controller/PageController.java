@@ -94,10 +94,24 @@ public class PageController {
     }
 
     // STUDIES
-    @GetMapping("/blog/JSCODE-자바1기")
+    @GetMapping("/blog/JSCODE-자바")
     public String JscodeJava() {
         return "redirect:https://wonjoon.gitbook.io/joons-til/java/jscode-java-study-note";
     }
+
+    @GetMapping("/blog/JSCODE-운영체제")
+    public String JscodeOS() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/os/jscode-os-study-note";
+    }
+
+    @GetMapping("/blog/JSCODE-데이터베이스")
+    public String JscodeDatabase() {
+        return "redirect:https://wonjoon.gitbook.io/joons-til/network/jscode-network-study-note";
+    }
+//    @GetMapping("/blog/JSCODE-자바1기")
+//    public String JscodeNetwork() {
+//        return "redirect:https://wonjoon.gitbook.io/joons-til/java/jscode-java-study-note";
+//    }
 
     // BOOKS
     @GetMapping("/blog/대규모-시스템-설계-기초")
