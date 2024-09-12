@@ -90,7 +90,7 @@ public class PageController {
     }
     @GetMapping("/blog/쿠버네티스-도입과-프로젝트-개선-과정")
     public String codementorImplementationOfK8s() {
-        return "redirect:https://wonjoon.gitbook.io/joons-til/toy-projects/codementor/implementation-of-kafka";
+        return "redirect:https://wonjoon.gitbook.io/joons-til/toy-project/codementor/implementation-of-k8s";
     }
 
     // STUDIES
