@@ -14,5 +14,5 @@
  JAR_PATH="/home/ubuntu/cicd/Resume_WebPage-0.0.1-SNAPSHOT.jar"
  echo "jar path : $JAR_PATH"
  chmod +x $JAR_PATH
- nohup java -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
+ nohup java -Djava.net.preferIPv4Stack=true -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
  echo "jar fild deploy success"
