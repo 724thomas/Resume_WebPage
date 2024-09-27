@@ -14,5 +14,12 @@
  JAR_PATH="/home/ubuntu/cicd/Resume_WebPage-0.0.1-SNAPSHOT.jar"
  echo "jar path : $JAR_PATH"
  chmod +x $JAR_PATH
- nohup java -Djava.net.preferIPv4Stack=true -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
- echo "jar fild deploy success"
+
+ # nohup.out 파일 삭제 및 새로운 로그 파일 생성
+ if [ -f nohup.out ]; then
+     rm nohup.out
+     echo "nohup.out 파일이 삭제되었습니다."
+ fi
+
+ nohup java -Djava.net.preferIPv4Stack=true -jar "$JAR_PATH" > nohup.out 2>&1 &
+ echo "JAR 파일 배포 성공, 로그는 nohup.out에 기록됩니다."
