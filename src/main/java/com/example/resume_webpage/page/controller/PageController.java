@@ -23,7 +23,7 @@ public class PageController {
 
     @GetMapping("/portfolio/kor")
     public String PortfolioKoreanVersion() {
-        return "portfolio-Korean(prev)";
+        return "portfolio-Korean";
     }
 
     @GetMapping("/portfolio")
